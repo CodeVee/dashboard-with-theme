@@ -12,6 +12,32 @@ html {
     height: 100%;
 }
 
+.wrapper {
+    width: 110rem;
+    margin: 0 auto;
+}
+
 .page {
     height: 100%;
+    font-family: $font-family;
+    &__inner {
+        max-width: $max-size;
+        height: 100vh;
+    }
+}
+
+.dashboard {
+    height: 20rem;
+    padding-top: 3rem;
+    font-size: 1.5rem;
+    @include themify($themes) {
+        background-color: themed("secondary-bg");
+        color: themed("text-color");
+    }
+
+    &__heading {
+        @include themify($themes) {
+            color: themed("heading-color");
+        }
+    }
 }

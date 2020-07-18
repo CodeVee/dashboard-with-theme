@@ -9,8 +9,38 @@ html {
   height: 100%;
 }
 
+.wrapper {
+  width: 110rem;
+  margin: 0 auto;
+}
+
 .page {
   height: 100%;
+  font-family: "Inter", sans-serif;
+}
+.page__inner {
+  max-width: 1440px;
+  height: 100vh;
+}
+
+.dashboard {
+  height: 20rem;
+  padding-top: 3rem;
+  font-size: 1.5rem;
+}
+.theme-dark .dashboard {
+  background-color: #1f212e;
+  color: #8b97c6;
+}
+.theme-light .dashboard {
+  background-color: #f5f7ff;
+  color: #63687e;
+}
+.theme-dark .dashboard__heading {
+  color: white;
+}
+.theme-light .dashboard__heading {
+  color: #1e202a;
 }
 
 /*# sourceMappingURL=style.css.map */
