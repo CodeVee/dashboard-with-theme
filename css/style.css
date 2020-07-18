@@ -6,6 +6,12 @@
 
 html {
   font-size: 10px;
+  height: 100%;
+}
+
+.page {
+  height: 100%;
+  background-color: #8b97c6;
 }
 
 /*# sourceMappingURL=style.css.map */
