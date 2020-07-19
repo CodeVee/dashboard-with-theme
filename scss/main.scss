@@ -34,8 +34,8 @@ html {
 }
 
 .dashboard {
-    height: 27rem;
-    padding-top: 3rem;
+    height: 21rem;
+    padding-top: 2rem;
     font-size: 1.5rem;
     @include themify($themes) {
         background-color: themed("secondary-bg");
@@ -113,32 +113,46 @@ html {
 }
 
 .main-cards {
-    margin-top: -12rem;
+    margin-top: -9rem;
 }
 
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 3rem;
+    grid-gap: 2.5rem;
 }
 
 .card {
-    height: 23rem;
     border-radius: .5rem;
     font-size: 1.2rem;
-    text-align: center;
-    padding: {
-        top: 4rem;
-        bottom: 4rem;
-    }
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     @include themify($themes) {
         background: themed("card-bg");
         color: themed("text-color");
+    }
+
+    &--bg {
+        height: 19rem;
+        align-items: center;
+        text-align: center;
+        padding: {
+            top: 2rem;
+            bottom: 2rem;
+        }
+    }
+
+    &--sm {
+        height: 11rem;
+        padding: 2.3rem;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
 
     &--facebook {
@@ -171,8 +185,8 @@ html {
     &__heading {
         @include themify($themes) {
             color: themed("heading-color");
-            font-size: 4.8rem;
         }
+        font-size: 4.8rem;
     }
 
     &__text {
@@ -197,6 +211,32 @@ html {
 
         &--red {
             color: $bright-red;
+        }
+    }
+
+    &__head {
+        font-size: 1.2rem;
+    }
+
+    &__number {
+        @include themify($themes) {
+            color: themed("heading-color");
+        }
+        font-size: 2.5rem;
+    }
+
+}
+
+.minor-cards {
+
+    &__heading {
+        @include themify($themes) {
+            color: themed("heading-color");
+            font-size: 2rem;
+            padding: {
+                top: 3rem;
+                bottom: 3rem;
+            }
         }
     }
 }

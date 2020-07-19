@@ -32,8 +32,8 @@ html {
 }
 
 .dashboard {
-  height: 27rem;
-  padding-top: 3rem;
+  height: 21rem;
+  padding-top: 2rem;
   font-size: 1.5rem;
 }
 .theme-dark .dashboard {
@@ -110,26 +110,21 @@ html {
 }
 
 .main-cards {
-  margin-top: -12rem;
+  margin-top: -9rem;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 3rem;
+  grid-gap: 2.5rem;
 }
 
 .card {
-  height: 23rem;
   border-radius: 0.5rem;
   font-size: 1.2rem;
-  text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .theme-dark .card {
   background: #252a41;
@@ -138,6 +133,22 @@ html {
 .theme-light .card {
   background: #f0f2fa;
   color: #63687e;
+}
+.card--bg {
+  height: 19rem;
+  align-items: center;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.card--sm {
+  height: 11rem;
+  padding: 2.3rem;
+}
+.card--sm div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .card--facebook {
   border-top: 3px solid #198ff5;
@@ -160,13 +171,14 @@ html {
 .card__handle {
   margin-left: 0.8rem;
 }
+.card__heading {
+  font-size: 4.8rem;
+}
 .theme-dark .card__heading {
   color: white;
-  font-size: 4.8rem;
 }
 .theme-light .card__heading {
   color: #1e202a;
-  font-size: 4.8rem;
 }
 .card__text {
   text-transform: uppercase;
@@ -188,6 +200,31 @@ html {
 }
 .card__stats--red {
   color: #dc414c;
+}
+.card__head {
+  font-size: 1.2rem;
+}
+.card__number {
+  font-size: 2.5rem;
+}
+.theme-dark .card__number {
+  color: white;
+}
+.theme-light .card__number {
+  color: #1e202a;
+}
+
+.theme-dark .minor-cards__heading {
+  color: white;
+  font-size: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.theme-light .minor-cards__heading {
+  color: #1e202a;
+  font-size: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
