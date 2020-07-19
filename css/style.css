@@ -21,6 +21,8 @@ html {
 .page__inner {
   max-width: 1440px;
   height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 .theme-dark .page__inner {
   background: #1e202a;
@@ -30,7 +32,7 @@ html {
 }
 
 .dashboard {
-  height: 20rem;
+  height: 27rem;
   padding-top: 3rem;
   font-size: 1.5rem;
 }
@@ -59,6 +61,7 @@ html {
 }
 .toggle__text {
   align-self: center;
+  margin-right: 0.5rem;
 }
 .toggle__button {
   display: flex;
@@ -104,6 +107,10 @@ html {
 }
 .toggle__button label:active:after {
   width: 3.25rem;
+}
+
+.main-cards {
+  margin-top: -12rem;
 }
 
 .cards {

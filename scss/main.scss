@@ -23,6 +23,10 @@ html {
     &__inner {
         max-width: $max-size;
         height: 100vh;
+        margin:  {
+            left: auto;
+            right: auto;
+        }
         @include themify($themes) {
             background: themed("primary-bg");
         }
@@ -30,7 +34,7 @@ html {
 }
 
 .dashboard {
-    height: 20rem;
+    height: 27rem;
     padding-top: 3rem;
     font-size: 1.5rem;
     @include themify($themes) {
@@ -56,6 +60,7 @@ html {
 
     &__text {
         align-self: center;
+        margin-right: .5rem;
     }
 
     &__button {
@@ -105,6 +110,10 @@ html {
             width: 3.25rem;
         }
     }
+}
+
+.main-cards {
+    margin-top: -12rem;
 }
 
 .cards {
