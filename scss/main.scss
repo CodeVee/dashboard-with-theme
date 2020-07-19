@@ -22,7 +22,7 @@ html {
     font-family: $font-family;
     &__inner {
         max-width: $max-size;
-        height: 100vh;
+        min-height: 100vh;
         margin:  {
             left: auto;
             right: auto;
@@ -232,11 +232,12 @@ html {
     &__heading {
         @include themify($themes) {
             color: themed("heading-color");
-            font-size: 2rem;
-            padding: {
-                top: 3rem;
-                bottom: 3rem;
-            }
+        }
+
+        font-size: 2rem;
+        padding: {
+            top: 2rem;
+            bottom: 2rem;
         }
     }
 }

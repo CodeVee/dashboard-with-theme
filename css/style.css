@@ -20,7 +20,7 @@ html {
 }
 .page__inner {
   max-width: 1440px;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -214,17 +214,16 @@ html {
   color: #1e202a;
 }
 
+.minor-cards__heading {
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 .theme-dark .minor-cards__heading {
   color: white;
-  font-size: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 .theme-light .minor-cards__heading {
   color: #1e202a;
-  font-size: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
