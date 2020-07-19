@@ -42,5 +42,62 @@ html {
 .theme-light .dashboard__heading {
   color: #1e202a;
 }
+.dashboard__heading + div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  display: flex;
+}
+.toggle__text {
+  align-self: center;
+}
+.toggle__button {
+  display: flex;
+}
+.toggle__button input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.toggle__button label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 5rem;
+  height: 2.6rem;
+  display: block;
+  border-radius: 2rem;
+  position: relative;
+  background: linear-gradient(#378fe6, #3eda82);
+}
+.toggle__button label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  width: 2rem;
+  height: 2rem;
+  background: #fff;
+  border-radius: 9px;
+  transition: 0.3s;
+}
+.theme-dark .toggle__button label:after {
+  background-color: #1e202a;
+}
+.theme-light .toggle__button label:after {
+  background-color: white;
+}
+.toggle__button input:checked + label {
+  background: #aeb3cb;
+}
+.toggle__button input:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+.toggle__button label:active:after {
+  width: 3.25rem;
+}
 
 /*# sourceMappingURL=style.css.map */
