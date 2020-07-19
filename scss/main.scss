@@ -149,7 +149,7 @@ html {
     height: 11rem;
     padding: 2.3rem;
 
-    div {
+    > div {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -235,7 +235,7 @@ html {
 .minor-cards {
   &__heading {
     @include themify($themes) {
-      color: themed("heading-color");
+      color: lighten($color: themed("heading-color"), $amount: 30%);
     }
 
     font-size: 2rem;

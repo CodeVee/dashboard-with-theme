@@ -146,7 +146,7 @@ html {
   height: 11rem;
   padding: 2.3rem;
 }
-.card--sm div {
+.card--sm > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -224,7 +224,7 @@ html {
   color: white;
 }
 .theme-light .minor-cards__heading {
-  color: #1e202a;
+  color: #5d6383;
 }
 
 .attribution {
