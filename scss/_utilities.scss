@@ -23,3 +23,7 @@
 @function themed($key) {
   @return map-get($theme-map, $key);
 }
+
+@mixin add-border-top($color) {
+    border-top: 3px solid $color;
+}

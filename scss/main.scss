@@ -23,6 +23,9 @@ html {
     &__inner {
         max-width: $max-size;
         height: 100vh;
+        @include themify($themes) {
+            background: themed("primary-bg");
+        }
     }
 }
 
@@ -100,6 +103,91 @@ html {
         
         label:active:after {
             width: 3.25rem;
+        }
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
+}
+
+.card {
+    height: 23rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: {
+        top: 4rem;
+        bottom: 4rem;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    @include themify($themes) {
+        background: themed("card-bg");
+        color: themed("text-color");
+    }
+
+    &--facebook {
+        @include add-border-top($facebook);
+    }
+
+    &--twitter {
+        @include add-border-top($twitter);
+    }
+
+    &--instagram {
+        @include add-border-top(transparent);
+        border-image: linear-gradient(to right ,hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%) 100%) 1;
+    }
+
+    &--youtube {
+        @include add-border-top($youTube);
+    }
+
+    .handle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__handle {
+        margin-left: .8rem;
+    }
+
+    &__heading {
+        @include themify($themes) {
+            color: themed("heading-color");
+            font-size: 4.8rem;
+        }
+    }
+
+    &__text {
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .stats {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__stats {
+        margin-left: .3rem;
+        font-weight: 700;
+        &--green {
+            color: $lime-green;
+        }
+
+        &--red {
+            color: $bright-red;
         }
     }
 }
