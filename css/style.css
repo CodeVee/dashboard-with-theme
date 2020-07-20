@@ -239,4 +239,48 @@ html {
   color: #3e52a3;
 }
 
+@media (max-width: 1025px) {
+  .wrapper {
+    width: 90vw;
+  }
+
+  .main-cards {
+    margin-top: -5rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .dashboard__heading {
+    font-size: 6.5vw;
+  }
+  .dashboard__heading + div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .dashboard__followers-text {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .toggle {
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 1.5rem;
+  }
+  .theme-dark .toggle {
+    border-top: 1px solid white;
+  }
+  .theme-light .toggle {
+    border-top: 1px solid #aeb3cb;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

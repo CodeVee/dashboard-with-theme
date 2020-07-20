@@ -1,3 +1,53 @@
-@media (max-width: 800px) {
+
+@media (max-width: 1025px) {
+    .wrapper {
+        width: 90vw;
+    }
+
+    .main-cards {
+        margin-top: -5rem;
+    }
     
-}
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+} 
+
+@media (max-width: 500px) {
+
+    .dashboard {
+
+        &__heading {
+            font-size: 6.5vw; 
+    
+             + div {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+              }
+        }
+
+        &__followers-text {
+            margin: {
+                top: 1rem;
+                bottom: 1.5rem;
+            }
+        }
+    }
+    
+
+    .toggle {
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 1.5rem;
+    
+        @include themify($themes) {
+            border-top: 1px solid themed("overview");
+        }
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+} 
