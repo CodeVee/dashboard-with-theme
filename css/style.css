@@ -251,6 +251,15 @@ html {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 2rem;
+  }
 }
 @media (max-width: 500px) {
   .dashboard__heading {
