@@ -17,6 +17,7 @@ $themes: (
     "heading-color": hsl(0, 0%, 100%),
     "toggle": linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%)),
     "overview": hsl(0, 0%, 100%),
+    "hover": lighten(hsl(228, 28%, 20%), 5%),
   ),
   "light": (
     "primary-bg": hsl(0, 0%, 100%),
@@ -26,5 +27,6 @@ $themes: (
     "heading-color": hsl(230, 17%, 14%),
     "toggle": hsl(230, 22%, 74%),
     "overview": hsl(230, 22%, 74%),
+    "hover": darken(hsl(227, 47%, 96%), 5%),
   ),
 );

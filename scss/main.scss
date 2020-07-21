@@ -129,10 +129,17 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 
   @include themify($themes) {
     background: themed("card-bg");
     color: themed("text-color");
+  }
+
+  &:hover {
+    @include themify($themes) {
+      background: themed("hover");
+    }
   }
 
   &--bg {

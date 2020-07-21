@@ -126,6 +126,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
 }
 .theme-dark .card {
   background: #252a41;
@@ -134,6 +135,12 @@ html {
 .theme-light .card {
   background: #f0f2fa;
   color: #63687e;
+}
+.theme-dark .card:hover {
+  background: #2e3552;
+}
+.theme-light .card:hover {
+  background: #dde2f3;
 }
 .card--bg {
   height: 19rem;
