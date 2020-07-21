@@ -239,6 +239,31 @@ html {
   color: #3e52a3;
 }
 
+@media (min-width: 1280px) and (min-height: 700px) and (max-height: 1000px) {
+  .dashboard {
+    height: 28.87vh;
+    padding-top: 3.23vh;
+  }
+
+  .main-cards {
+    margin-top: -11.52vh;
+  }
+
+  .card--bg {
+    height: 23.65vh;
+    padding-top: 3.23vh;
+    padding-bottom: 3.23vh;
+  }
+  .card--sm {
+    height: 13.74vh;
+    padding: 2.11vh;
+  }
+
+  .minor-cards__heading {
+    padding-top: 3.23vh;
+    padding-bottom: 3.23vh;
+  }
+}
 @media (max-width: 1025px) {
   .wrapper {
     width: 90vw;
@@ -253,10 +278,7 @@ html {
   }
 
   .attribution {
-    font-size: 11px;
-    text-align: center;
     position: relative;
-    bottom: 0;
     left: 0;
     margin-top: 2rem;
   }
